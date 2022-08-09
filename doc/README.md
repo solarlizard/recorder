@@ -20,7 +20,7 @@ Idea is to capture and record audio and video from chrome running in docker:
 
 ### Try it:
 
-1. Go to https://meet.jit.si/PageRecTest, 
+1. Go to https://meet.jit.si/PageRecTest and press "Join mmeeting", 
 2. Run ````./start.sh````
 3. When you see records in logs like:
 ````
