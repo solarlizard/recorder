@@ -3,6 +3,9 @@
 ## Solution 1:
 
 Try to build everything from scratch (this repo): 
+
+Idea is to capture and record audio and video from chrome running in docker:
+
 ````
 *---------------------------------------------------------------------------*
 |                                  DOCKER                                   |
