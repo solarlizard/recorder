@@ -44,12 +44,12 @@ Of course we need to improve client to work with recording client different way 
 
 Agora is already providing that service: https://docs.agora.io/en/cloud-recording/cloud_recording_webpage_mode?platform=RESTful
 
-API is ugly, non idempotent and without online problems detection.
+API is ugly, non idempotent and without online problems detection, but it is working and posting records to S3.
 
 ## Solution 3:
 This solution highly depends on UI functionality
 
-We can record all streams separatly and have one more "record" with UI actions like:
+We can record all streams separately and have one more "record" with UI actions like:
 1. When exactly streams appeared on UI and were stopped.
 2. Everything that can be stored as events on a timeline with ability to "Playback", like chat.
 
@@ -58,12 +58,12 @@ And we need to make "player" to show all this together according to timeline
 # How would you ensure low-latency for participants across regions?
 
 ## Simpliest solution:
-To deploy just geo-distributed turns connected with SFU servers by high speed low-latency channels.
+To deploy geo-distributed turns servers connected with SFU servers by high speed low-latency channels.
 
 ## Cascaded SFU
-Should I describe here how it works? jitsi and janus both implements this strategy and there are a lot of documnentation about it.
+Should I describe here how it works? jitsi and janus both implements this strategy and there are a lot of documentation about it.
 
-The main idea is that packet-loss detection is made on nearest SFU - and it is much better than using geo-distributed turns.
+The main idea is that packet-loss detection and other congestion control stuff is made on nearest SFU - and it is much better than using geo-distributed turns.
 
 # What monitoring would you implement to ensure you have a high quality audio/video for all participants?
 To use something like https://www.callstats.io/arch/ - or build own from scratch
