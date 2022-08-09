@@ -66,10 +66,12 @@ Should I describe here how it works? jitsi and janus both implements this strate
 The main idea is that packet-loss detection and other congestion control stuff is made on nearest SFU - and it is much better than using geo-distributed turns.
 
 # What monitoring would you implement to ensure you have a high quality audio/video for all participants?
-To use something like https://www.callstats.io/arch/ - or build own from scratch
+To use something like https://www.callstats.io/arch/ - or https://testrtc.com/ or build own from scratch
 That solutions are based on ````getStats```` () calls of WebRTC API.
 
 IMHO most annoing problems are not from low video quality and high latency, they are from situations when user forget to allow camera or mic access, or they are broken, or user is behind some very unfrendly firewall - we need to detect this and show user, that we are not responisble for this.
+
+Another problem is that many WebRTC based solutions do not inform users about problems with "reconnecting..." banners of warnings like "low brandwith" and it makes users think that solution is responsible for that problem an not the users envoironment.
 
 # What alerts would you implement to show if a region is degrading?
 It depends on the monitoring software, and how we can connect geo data to WebRTC logs from previous question.
