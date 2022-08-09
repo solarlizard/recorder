@@ -30,7 +30,7 @@ recorder_1  | frame=  184 fps= 12 q=31.0 size=    1048kB time=00:00:07.54 bitrat
 ````
 4. Watch record in ````./records/rec.mpg````
 
-Of course we need to imporve client to work with recoring client different way than ususal, S3 storing, converting to MP4, managing server, failover detection e.t.c.
+Of course we need to improve client to work with recording client different way than usual, S3 storing, converting to MP4, managing server, failover detection e.t.c.
 
 ### Problems:
 1. Audio and video synchronization is sensitive to CPU load
