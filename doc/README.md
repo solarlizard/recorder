@@ -34,7 +34,7 @@ Of course we need to improve client to work with recording client different way 
 
 ### Problems:
 1. Audio and video synchronization is sensitive to CPU load
-2. Scaling!!!
+2. Scaling!!! One recording = at least one CPU core
 
 #### Scaling:
 1. Using prewarmed AWS Servers
