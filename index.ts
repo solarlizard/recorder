@@ -30,8 +30,8 @@ import * as puppeteer from "puppeteer";
         height : 768
     })
 
-    page.on ('console', value => console.log (value.text ()))
-    page.on ('error', error => console.error (error))
+    //page.on ('console', value => console.log (value.text ()))
+    //page.on ('error', error => console.error (error))
 
     page.on ('load', async () => {
         

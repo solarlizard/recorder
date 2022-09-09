@@ -2,6 +2,7 @@ version: '3'
 services:
     recorder:
         build: ./
+        platform: linux/amd64
         volumes:
             - ./records:/opt/vol
         privileged: true
